@@ -1,14 +1,26 @@
 {
-  "name": "naza-cli",
-  "version": "0.1.0",
-  "private": true,
+  "name": "naza-tool",
+  "version": "0.0.4",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "bin": {
+    "naza": "bin/index.js"
+  },
   "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
     "core-js": "^3.6.5",
+    "download-git-repo": "^3.0.2",
+    "express": "^4.17.1",
+    "figlet": "^1.5.0",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.3.3",
+    "jszip": "^3.5.0",
+    "path": "^0.12.7",
+    "progress": "^2.0.3",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
@@ -40,11 +52,20 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-console": "off",
+      "no-useless-escape": "off"
+    }
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "This is a component development tool for the Naza platform.",
+  "keywords": [
+    "naza"
+  ],
+  "author": "Mondschein-SX",
+  "license": "ISC"
 }
